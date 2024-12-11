@@ -14,7 +14,6 @@ module ntt (
   logic [6:0]   mem_addr;
   logic [11:0]  mem_vector [0:127];
   mem_ntt memory (
-.clock(clk_i),
     .row_i  (mem_addr   ),
     .data_o (mem_vector )
   );
